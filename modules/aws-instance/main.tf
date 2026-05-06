@@ -28,3 +28,4 @@ resource "aws_instance" "app" {
 
   tags = var.tags
 }
+

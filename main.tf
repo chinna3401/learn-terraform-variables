@@ -125,3 +125,8 @@ module "ec2_instances" {
     environment = "development"
   }
 }
+
+module "s3_bucket" {
+  source      = "bofa.com/s3-bucket-madhua/aws"
+  bucket_name = "madhua-input_s3_bucket"
+}
