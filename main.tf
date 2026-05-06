@@ -126,7 +126,8 @@ module "ec2_instances" {
   }
 }
 
-module "s3_bucket" {
-  source      = "bofa/s3-bucket-madhua/aws"
+module "s3-bucket-madhua" {
+  source  = "app.terraform.io/policy-as-code-training/s3-bucket-madhua/aws"
+  version = "1.1.0"
   bucket_name = "madhua-input_s3_bucket"
 }
